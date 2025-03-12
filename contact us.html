@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tanzanite Healthcare Limited</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(to right, #0077b6, #023e8a);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+        }
+        .content {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .content h2 {
+            color: #0077b6;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .contact-form, .contact-info {
+            margin-top: 2rem;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            padding: 2rem;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background: #0077b6;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .contact-form button:hover {
+            background: #005f8c;
+        }
+        .contact-info {
+            margin-top: 3rem;
+            text-align: center;
+        }
+        .contact-info p {
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+        }
+        .contact-info a {
+            color: #0077b6;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Reach out to us with your inquiries or feedback.</p>
+    </header>
+    <section class="content">
+        <h2>Get in Touch</h2>
+        <p>
+            Whether you have questions about our services, want to collaborate, or need support, 
+            our team is here to help. Fill out the form below or use the contact details provided to reach us.
+        </p>
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_contact_form.php" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+                
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h2>Our Contact Details</h2>
+            <p><strong>Phone:</strong> +255 123 456 789</p>
+            <p><strong>Email:</strong> <a href="mailto:info@tanzanitehealthcare.com">info@tanzanitehealthcare.com</a></p>
+            <p><strong>Address:</strong> P.O. Box 12345, Dar es Salaam, Tanzania</p>
+            <p><strong>Working Hours:</strong> Monday - Friday: 8:00 AM - 5:00 PM</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Tanzanite Healthcare Limited. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
