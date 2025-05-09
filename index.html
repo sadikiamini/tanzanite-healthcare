@@ -1,85 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tanzanite Healthcare Limited</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(to right, #0077b6, #023e8a);
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.5rem;
-        }
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 2rem;
-            background: #f1f1f1;
-        }
-        .hero-text {
-            max-width: 50%;
-        }
-        .hero-text h2 {
-            font-size: 2rem;
-            color: #0077b6;
-        }
-        .hero-text p {
-            font-size: 1.2rem;
-            margin-top: 1rem;
-        }
-        .hero-text a {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.8rem 1.5rem;
-            background: #0077b6;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .hero-text a:hover {
-            background: #005f8b;
-        }
-        .hero-img img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-        footer {
-            background: #023e8a;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanzanite Healthcare Ltd</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9fafa;
+      color: #2a2a2a;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    header.hero {
+      background: linear-gradient(135deg, #00796B, #009688);
+      color: #fff;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    header.hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    header.hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background: #ffffff;
+      color: #00796B;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      background-color: #ffffff;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #00796B;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .service {
+      flex: 1 1 30%;
+      background-color: #e0f2f1;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .about p, .contact p {
+      text-align: center;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    footer {
+      background-color: #004D40;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Tanzanite Healthcare Limited</h1>
-        <p>Revolutionizing nursing care and empowering healthcare professionals in Tanzania.</p>
-    </header>
-    <div class="hero">
-        <div class="hero-text">
-            <h2>Compassionate Care at Your Fingertips</h2>
-            <p>We provide professional home nursing services, coordinate clinical placements, and empower nurses with opportunities and tools.</p>
-            <a href="#services">Explore Our Services</a>
-        </div>
-        <div class="hero-img">
-            <img src="https://via.placeholder.com/500" alt="Nursing Care">
-        </div>
+  <header class="hero">
+    <div class="container">
+      <img src="your-logo-url.png" alt="Tanzanite Healthcare Logo" style="margin-bottom: 1rem; max-height: 100px;"><h1>Tanzanite Healthcare Ltd</h1>
+      <p>Empowering Nurses. Serving Communities. Connecting the World to Tanzanian Healthcare.</p>
+      <a href="#services" class="btn">Explore Our Services</a>
     </div>
-    <footer>
-        <p>&copy; 2025 Tanzanite Healthcare Limited. All Rights Reserved.</p>
-    </footer>
+  </header>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Home Nursing Care</h3>
+          <p>Personalized nursing care at the comfort of your home, provided by experienced professionals.</p>
+        </div>
+        <div class="service">
+          <h3>Clinical & Elective Placements</h3>
+          <p>We coordinate and guide international students and nurses during their placements in Tanzania.</p>
+        </div>
+        <div class="service">
+          <h3>Nurse Recruitment</h3>
+          <p>Connecting qualified Tanzanian nurses with job opportunities locally and internationally.</p>
+        </div>
+        <div class="service">
+          <h3>Trainings & Workshops</h3>
+          <p>We organize professional development workshops and practical training sessions for nurses and healthcare workers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about section">
+    <div class="container">
+      <h2>About Tanzanite Healthcare</h2>
+      <p>We are a nurse-led organization based in Tanzania, committed to improving healthcare access and building bridges between local expertise and global opportunities. Founded by a perioperative nurse at Muhimbili National Hospital, we focus on excellence, compassion, and innovation.</p>
+    </div>
+  </section>
+
+  <section class="contact section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email: info@tanzanitehealthcare.com</p>
+      <p>Phone: +255 712 345 678</p>
+      <p>Location: Dar es Salaam, Tanzania</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Tanzanite Healthcare Ltd. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
